@@ -65,7 +65,7 @@ function Payment() {
     { title: " FREE SHIPPING VỚI HÓA ĐƠN TRÊN 2 TRIỆU!" },
   ];
   const [currentTitleIndex, setCurrentTitleIndex] = useState(0);
-  const socket = new SockJS("http://api-beeshoes.devopsedu.vn/ws");
+  const socket = new SockJS(process.env.REACT_APP_WS_URL);
   const stompClient = Stomp.over(socket);
   useEffect(() => {
     console.log(formErrors);

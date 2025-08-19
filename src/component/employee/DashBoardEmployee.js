@@ -71,7 +71,7 @@ const DashBoardEmployee = ({ children }) => {
   const handleMenuLeave = () => {
     setOpenInfo(false);
   };
-  const socket = new SockJS("http://beeshoes.devopsedu.vn/ws");
+  const socket = new SockJS(process.env.REACT_APP_WS_URL);
   const stompClient = Stomp.over(socket);
 
   const data = useAppSelector(GetNotification);
