@@ -1,7 +1,7 @@
 import axios from "axios";
 
 // Đường dẫn api
-let api = "http://api-beeshoes.devopsedu.vn/admin/address";
+const api = `${process.env.REACT_APP_API_URL}/admin/address`;
 
 var dataUser = [];
 

@@ -1,7 +1,7 @@
 /** @format */
 
 export const AppConfig = {
-  apiUrl: "http://api-beeshoes.devopsedu.vn",
+  apiUrl: process.env.REACT_APP_API_URL,
   routerBase: "",
 };
 
